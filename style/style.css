@@ -56,18 +56,15 @@ body {
   justify-content: center;
   flex-direction: column;
 }
-.all .modal .times {
-  width: 50rem;
-  text-align: right;
+.all .modal i {
   position: absolute;
-  top: -15rem;
-  left: 61rem;
+  zoom: 5;
+  top: 9px;
+  right: 9px;
+  color: white;
   cursor: pointer;
-  display: block;
-  width: 5px;
-  height: 5px;
 }
-.all .modal .times:hover {
+.all .modal i:hover {
   transform: scale(1.1);
 }
 .all .modal h1 {

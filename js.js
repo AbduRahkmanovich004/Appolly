@@ -16,6 +16,10 @@ document.addEventListener("keydown", (e) => {
     bgModal.classList.add("hidden");
   }
 });
+document.querySelector("i").addEventListener("click", () => {
+    document.querySelector(".modal").style.display = "none";
+    bgModal.classList.add("hidden");
+});
 
 const menuOpen = document.querySelector(".bottomNav svg");
 const menuClose = document.querySelector("aside img");
