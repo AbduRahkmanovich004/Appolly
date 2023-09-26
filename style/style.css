@@ -309,6 +309,7 @@ body {
 
 aside {
   display: none;
+  cursor: pointer;
 }
 
 .hidden {
@@ -338,6 +339,7 @@ aside {
   .bottomNav svg {
     display: block;
     margin-left: 2rem;
+    cursor: pointer;
   }
   .leftMenu {
     display: none !important;
@@ -373,6 +375,7 @@ aside {
   }
   .aside img {
     margin-left: 17rem;
+    cursor: pointer;
   }
   .aside img:hover {
     transform: scale(1.1);
