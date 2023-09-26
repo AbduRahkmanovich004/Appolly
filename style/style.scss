@@ -28,10 +28,20 @@ body {
   max-width: 144rem;
   width: 144rem;
   position: relative;
-  .modal {
-    position: fixed;
+  .modalBg{
+    position: absolute;
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    background: #00000073;
+    z-index: 3;
+    backdrop-filter: blur(4px);
+  }
+  .modal {
+    border-radius: 10px;
+    position: fixed;
+    top: 7rem;
+    width: 109rem;
+    height: 50rem;
     background-image: linear-gradient(90deg, #1d98ff 0%, #2961ff 100%);
     text-align: center;
     z-index: 6;
@@ -279,6 +289,9 @@ body {
 aside {
   display: none;
 }
+.hidden{
+  display: none;
+}
 @media screen and (max-width: 1326px) {
   html {
     font-size: 55%;
@@ -290,6 +303,9 @@ aside {
   }
 }
 @media screen and (max-width: 890px) {
+  .modal{
+    zoom: 0.7;
+  }
   html {
     font-size: 62.5%;
   }
@@ -320,6 +336,7 @@ aside {
     zoom: 0.66;
   }
   .aside {
+    transition: all 0.3s;
     display: block;
     position: absolute;
     border-radius: 1rem;
@@ -327,8 +344,9 @@ aside {
     top: 3rem;
     width: 26.7rem;
     height: 35.6rem;
-    box-shadow: 0 0 300rem 30rem rgb(0, 0, 0);
-    z-index: 4;
+    box-shadow: 0 0 3rem rgb(198, 195, 195);
+    transform: translateX(-70rem);
+    z-index: 9 !important;
     padding: 2rem 4rem;
     img {
       margin-left: 17rem;
@@ -348,6 +366,9 @@ aside {
       }
     }
   }
+  .sur{
+    transform: translateX(-55%);
+  }
 }
 @media screen and (max-width: 786px) {
   .all{
@@ -365,11 +386,10 @@ aside {
   }
 }
 @media screen and (max-width: 562px) {
- nav .container{
-  width: 30rem;
- }
- body{
- }
+  nav .container{
+    width: 30rem;
+  }
+  
  .topNav{
   display: none !important;
  }
@@ -402,7 +422,7 @@ aside {
   max-width: 117rem;
 }
 .bottomNav{
-  z-index: 4;
+  z-index: 2;
 }
 .times{
   transform: scale(2.5) !important;
@@ -411,6 +431,11 @@ aside {
     transform: scale(2.5);
 
   }
+}
+.modal{
+  zoom: 1;
+  width: 61rem !important;
+  height: 82rem !important;
 }
 }
 
