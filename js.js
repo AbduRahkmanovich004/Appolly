@@ -14,11 +14,12 @@ document.addEventListener("keydown", (e) => {
   if (e.key == "Escape") {
     document.querySelector(".modal").style.display = "none";
     bgModal.classList.add("hidden");
+    document.querySelector("aside").classList.remove("sur");
   }
 });
 document.querySelector("i").addEventListener("click", () => {
-    document.querySelector(".modal").style.display = "none";
-    bgModal.classList.add("hidden");
+  document.querySelector(".modal").style.display = "none";
+  bgModal.classList.add("hidden");
 });
 
 const menuOpen = document.querySelector(".bottomNav svg");

@@ -29,8 +29,8 @@ body {
   z-index: 0;
   display: flex;
   justify-content: center;
-  max-width: 144rem;
-  width: 144rem;
+  width: 100%;
+  background-size: cover;
   position: relative;
 }
 .all .modalBg {
